@@ -47,7 +47,7 @@ export default function AvailableMeals() {
   useEffect(() => {
     setIsLoading(true);
     const fetchMeals = async () => {
-      const response = await fetch(appSetting.firebaseUrl);
+      const response = await fetch(appSetting.firebaseUrlMeals);
 
       if (!response.ok) {
         throw new Error("Something went wrong!");
